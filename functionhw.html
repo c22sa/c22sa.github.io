@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap" rel="=stylesheet">
+<head>
+	<title></title>
+
+	<style type="text/css">
+		body{
+			font-family: 'Press Start 2P', bold;
+			margin-left:250px;
+			margin-right:-150px;
+			background-color: rgb(220,220,220);
+			color:rgb(169, 169, 169);
+
+		}
+	</style>
+</head>
+<body>
+<h1>Zaivion's Website</h1>
+
+<input id="textbox"></input>
+<button id="button">submit</button>
+
+<script type="text/javascript">
+
+var button = document.getElementById("button");
+	var input = document.getElementById('textbox');
+
+
+function hacker (){
+		var text = input.value;
+	var div = document.createElement('div');
+	document.body.appendChild(div);
+	div.innerText = ">hey " + text;
+
+}
+
+function hackerAlways () {
+	setInterval(hacker, 500);
+};
+
+button.addEventListener("click", hackerAlways);
+
+
+
+// setInterval(hacker, 1000);
+
+
+	
+</script>
+</body>
+</html>

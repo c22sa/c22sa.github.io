@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#piano {
+			width: 15px;
+			height: 50px;
+			background-color: blue;
+		}
+	</style>
+
+
+	</head>
+<body>
+
+
+<div id= "piano"> 
+	
+</div>
+
+<script type="text/javascript">
+	var piano = document.getElementById('piano');
+	piano.addEventListener("click", function(event){
+		console.log(event);
+	})
+
+	   <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <audio controls  id="audio" src="song.mp3"></audio>
+</script>
+
+
+
+</body>
+</html>
